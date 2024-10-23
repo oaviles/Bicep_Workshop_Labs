@@ -1,0 +1,9 @@
+RG
+V1
+az deployment sub create --location mexicocentral --template-file main.bicep
+
+V2
+az deployment sub create --location mexicocentral --template-file main.bicep --parameters @parameters.json
+
+Resources
+az deployment group create --resource-group Bicep_Zone --template-file main.bicep --parameters @parameters.json
